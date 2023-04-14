@@ -24,9 +24,115 @@
     Formas de manejar eventos:
 
     •	Mediante atributos HTML: <button onclick="miFuncion()">Presiona Aquí!</button>
+    •	Mediante propiedades JavaScript: elemento.onclick = miFuncion(){ …código… }
+    •	Mediante addEventListener():  la forma más recomendable es hacer uso del método .addEventListener(), 
+        el cuál es mucho más potente y versatil para la mayoría de los casos.
 
+*/
+
+/* Lista de eventos mas comunes
+    Esta es una lista de algunos de los eventos mas usados.
+
+    Eventos del mouse:
+    - focus: ocurre cuando el elemento gana el foco.
+    - blur: Cuando el elemento pierde el foco.
+    - click: ocurre cuando el usuario hace clic sobre el elemento.
+    - dblclick: ocurre cuando el usuario hace doble clic sobre el elemento.
+    - mousedown: ocurre cuando el usuario presiona el botón del ratón en un elemento.
+    - mouseup: ocurre cuando el usuario libera el botón pulsado del ratón sobre un elemento.
+    - mouseover: ocurre cuando el usuario mantiene el puntero sobre un elemento.
+    - mouseout: ocurre cuando el usuario mueve el puntero fuera de un elemento.
+    - mousemove: ocurre cuando el usuario mueve el puntero del ratón sobre un elemento.
+
+    Eventos del teclado:
+    - keydown: ocurre cuando el usuario presiona una tecla.
+    - keyup: ocurre cuando el usuario libera la tecla.
+    - keypress: ocurre cuando el usuario presiona una tecla y la mantiene pulsada.
 */
 
 
 
+let botonDeSaludo = document.getElementById("miBoton");
 
+let contador = 0;
+
+botonDeSaludo.onmousedown = ()=> {
+    console.log(`El contador ahora vale: ${contador += 1}`);
+}
+
+botonDeSaludo.onmouseup = ()=> {
+    console.log(`El contador ahora vale: ${contador += 1}`);
+}
+
+
+
+// Calculadora basica usando selectores, eventos y DOM
+
+// Seleccionar
+let primerInput = document.getElementById("numero1");
+let segundoInput = document.getElementById("numero2");
+
+// Seleccionar botones
+let botonDeSumar = document.getElementById("botonSumar")
+let botonDeRestar = document.getElementById("botonRestar")
+let botonDeMultiplicar = document.getElementById("botonMultiplicar")
+let botonDeDividir = document.getElementById("botonDividir")
+
+// Seleccionar Parrafo donde se muestra el resultado
+let parrafoResultado = document.getElementById("resultado");
+
+// Evento de sumar
+botonDeSumar.onclick = ()=>{
+    parrafoResultado.innerText =  `El total de la suma es: ${+primerInput.value + +segundoInput.value}`;
+}
+
+// Evento de Restar
+botonDeRestar.onclick = ()=>{
+    parrafoResultado.innerText =  `El total de la resta es: ${+primerInput.value - +segundoInput.value}`;
+}
+
+// Evento de Multiplicar
+botonDeMultiplicar.onclick = ()=>{
+    parrafoResultado.innerText =  `El total de la multiplicacion es: ${+primerInput.value * +segundoInput.value}`;
+}
+
+// Evento de Dividir
+botonDeDividir.onclick = ()=>{
+    parrafoResultado.innerText =  `El total de la divicion es: ${+primerInput.value / +segundoInput.value}`;
+}
+
+
+// Calculadora con eval (EN UNA SOLA LINEA!)
+// Eval como su nombre lo indica evaluara una operacion matematica y fraccionara el contenido para retornar un resultado
+document.getElementById("operacion").onclick = ()=> document.getElementById("parrafoEval").innerText = `El resultado es: ${eval(document.getElementById("inputEval").value)}`
+
+
+
+
+
+/* 
+    eventListener()
+
+    Con el método .addEventListener() podemos añadir una "escucha" del evento indicado en el primer parámetro, 
+    y en el caso de que ocurra, se ejecutará la función asociada indicada en el segundo parámetro.
+*/
+
+
+
+let botonDeColor = document.getElementById("camiarColor");
+
+// Añadiendo escucha de evento: parametros( tipo_de_evento, manejador/funcion a realizar )
+
+
+const colorVerde =  ()=>{
+    document.body.classList.remove("from-yellow-400", "to-yellow-900");
+    document.body.classList.add("from-green-400", "to-green-900");
+}
+
+const colorAmarillo =  ()=>{
+    document.body.classList.remove("from-green-400", "to-green-900");
+    document.body.classList.add("from-blue-400", "to-blue-900");
+}
+
+botonDeColor.addEventListener("click", colorVerde);
+botonDeColor.addEventListener("mousedown", colorAmarillo);
