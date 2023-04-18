@@ -118,4 +118,3 @@ setInterval(
 
 
 setInterval(()=>{let reloj = new Date();document.getElementById("reloj").innerText = reloj.toLocaleTimeString()},1000);
-
