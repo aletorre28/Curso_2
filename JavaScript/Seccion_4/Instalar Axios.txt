@@ -1,0 +1,17 @@
+1- Crea el archivo package.json con el comando: npm init
+
+2- Crea la carpeta de node_modules con el comando: npm install
+
+3- Instala Axios con el comando: npm i axios -d
+
+4- enlaza axios a tu proyecto (Si esta en la carpeta raiz) 
+agregando al archivo HTML el script: 
+<script src="./node_modules/axios/dist/axios.min.js"></script>
+
+Seguido el script que enlaza tu archivo JavaScript:
+<script src="./miArchivo.js"></script>
+
+
+
+
+NOTA: NO modifiques el archivo package.json ni el archivo package-lock.json, son vitales para node_modules
