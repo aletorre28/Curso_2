@@ -13,12 +13,12 @@ El index debe contener:
 La pagina de Trabajos realizados debe contener:
     - Menu / navbar
     - descripcion de la pagina actual
-     -Secciones: 
-              1 - Lenguajes Aprendidos (*Opcional agregar animaciones).
-              2 - Herramientas Aprendidas (*Opcional agregar animaciones).
-              3 - Trabajos Realizados: una de las siguientes 2 opciones...
-	Opcion 1: Img y Ancla del mismo proyecto ONLINE en GitHub Pages.
-	Opcion 2: Agrega un menu (con anclas) de proyectos realizados y crea una pagina por cada proyecto la cual puedas ingresar desde el menu previamente mencionado.
+        -Secciones: 
+            1 - Lenguajes Aprendidos (*Opcional agregar animaciones).
+            2 - Herramientas Aprendidas (*Opcional agregar animaciones).
+            3 - Trabajos Realizados: una de las siguientes 2 opciones:
+                Opcion 1: Img y Ancla del mismo proyecto ONLINE en GitHub Pages.
+	            Opcion 2: Agrega un menu (con anclas) de proyectos realizados y crea una pagina por cada proyecto la cual puedas ingresar desde el menu previamente mencionado.
     - Footer (Reloj, anclas a las demas paginas principales: Inicio, Contacto)
 
 
@@ -41,7 +41,9 @@ La pagina de contacto debe contener:
     3- JavaScript
     
    *Opcional: 
-          Agrega animaciones con la Libreria de animacion al hacer Scroll AOS: https://michalsnik.github.io/aos/ O la libreria de animaciones Animate.css: https://animate.style/
+        Agrega animaciones con la Libreria de animacion al hacer Scroll AOS: https://michalsnik.github.io/aos/ 
+	O 
+        la libreria de animaciones Animate.css: https://animate.style/
 
 
 Consejo: Ingresen a asesoria. 😎
