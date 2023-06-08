@@ -50,3 +50,16 @@ Consejo: Ingresen a asesoria. 😎
 
 Tiempo de entrega: 05/05/2023 
 En caso de ser necesario se extendera hasta el 09/05/23
+
+
+
+
+
+
+
+
+Evaluacion:
+
+- Elabora un reloj digital que muestre la hora actual en formato 12h, la fecha actual
+- Elabora un cronometro que permita dar pausa y play.
+- Elabora una funcion que muestre un saludo por cada estudiante de un array (con 5 alumnos) en un parrafo cada 5 seg.

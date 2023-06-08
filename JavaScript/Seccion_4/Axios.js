@@ -1,5 +1,3 @@
-const axios = require('./axios/dist/browser/axios.cjs');
-
 // Seleccion de boton
 let boton = document.getElementById("siguiente");
 let contador = 1;

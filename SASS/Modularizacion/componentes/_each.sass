@@ -23,6 +23,22 @@ $numeros: 5,7,9,11,13,15,17,19,21,23
     .parrafo_#{$elemento}
         color: red
         background: #3b3a3a
-        font-size: $elemento + px
+        font-size: $elemento + px // Concatenacion de valor y string
         padding: 5px
         border-radius:10px
+
+
+
+
+// Ejemplo de Each usando Funciones
+$estaciones: otono, invierno, primavera, verano
+$coloresEstaciones: gray, skyblue, green, orange
+
+@each $estacion in $estaciones
+    .temporada_#{$estacion}
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 50px
+        font-size: 2.5rem
+        background-color: nth($coloresEstaciones, index($estaciones, $estacion))

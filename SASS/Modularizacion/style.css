@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* Variables */
 /* Mixins */
 /* Mixin con Parametros */
@@ -301,6 +300,42 @@ body main section {
   border-radius: 10px;
 }
 
+.temporada_otono {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  font-size: 2.5rem;
+  background-color: gray;
+}
+
+.temporada_invierno {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  font-size: 2.5rem;
+  background-color: skyblue;
+}
+
+.temporada_primavera {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  font-size: 2.5rem;
+  background-color: green;
+}
+
+.temporada_verano {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  font-size: 2.5rem;
+  background-color: orange;
+}
+
 .claseCaja {
   background-color: red;
 }
@@ -328,23 +363,4 @@ body main section {
 .elemento-5 {
   width: 250px;
   height: 250px;
-}
-
-.bg-red {
-  background-color: red;
-}
-
-.bg-green {
-  background-color: green;
-}
-
-.bg-blue {
-  background-color: blue;
-}
-
-/*  Funciones
- *      transparentize($color, $nivel): Hace $color más transparente incrementando el canal alpha 
- *      con un $nivel entre 0 y 1. Es idéntico a fade-out($color, $nivel).
- *      grayscale($color): Devuelve un color en escala de grises con el mismo lightness que $color. 
- *      Es idéntico a change-color($color, $saturation: 0%).
- *  *//*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
