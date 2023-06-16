@@ -15,6 +15,7 @@ import Navbar from './components/Navbar';
 import App from './App';
 import Home from './views/Home';
 import Carrito from './views/Carrito';
+import ApiAxiosView from './views/ApiAxiosView';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -27,7 +28,7 @@ root.render(
       <Route path="/carrito" element={<Carrito />} />
       <Route path="/login" element={<App />} />
       <Route path="/register" element={<App />} />
+      <Route path="/ApiAxios" element={<ApiAxiosView />} />
     </Routes>
-    <p>footer</p>
   </BrowserRouter>
 );

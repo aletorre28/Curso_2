@@ -1,4 +1,6 @@
 import Input from "../components/Input";
+import UseStateHook from "../Hooks/UseStateHook";
+import ApiFetch from "../Hooks/ApiFetch";
 
 const Home = () => {
     return ( 
@@ -17,6 +19,10 @@ const Home = () => {
                 placeholder5="Confirmar contraseña"
                 tipo5="password"
             />
+            <UseStateHook />
+            <br />
+            <br />
+            {/* <ApiFetch /> */}
         </>
     );
 }
