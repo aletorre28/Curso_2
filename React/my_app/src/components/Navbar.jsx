@@ -12,7 +12,7 @@ const Navbar = () => {
 
     function cambiarColor({isActive}){
         return {
-            color: isActive ? "#0E182D" : '#BAE6FD',
+            color: isActive ? "#0E182D" : '#b56000',
             textDecoration: "none",
             fontSize: "20px"
         }
@@ -31,6 +31,12 @@ const Navbar = () => {
             </span>
             <span>
                 <NavLink to="/carrito" style={cambiarColor}>Carrito</NavLink>
+            </span>
+            <span>
+                <NavLink to="/ApiAxios" style={cambiarColor}>Api Individual</NavLink>
+            </span>
+            <span>
+                <NavLink to="/ApiAxiosMap" style={cambiarColor}>Api Mapeo</NavLink>
             </span>
         </nav>
     );
