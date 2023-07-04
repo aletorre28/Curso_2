@@ -246,3 +246,40 @@ let personas2: {nombre:string, edad:number, sexo:string, pais:string}[] = [
         pais: "Colombia"
     }
 ];
+
+
+
+
+
+// Crear Tuple o Lista ordenada de elementos
+
+/*
+    Un tuple en es un tipo de datos que permite definir una colección ordenada 
+    de elementos con tipos específicos. A diferencia de los arrays, los tuples 
+    tienen un número fijo de elementos y cada elemento puede tener un tipo de 
+    dato diferente. 
+
+    Curiosidad: en python tambien existen los tuples con una ligera diferencia
+*/
+
+
+let miPrimeraTupla: [string, number, boolean] = ["Diego", 27, true];
+
+// Errores que surgirian al modificar una tupla.
+/* Aqui veremos un error que indica que no se puede colocar un numero entero donde deberia ir
+un string, ni un string donde deberia ir un numero entero.
+*/
+// miPrimeraTupla= [1,"Diego",true]; 
+
+
+// Aqui veremos un error que indica que no se puede colocar mas datos de los que estan definidos por defecto.
+// miPrimeraTupla = ["Diego", 27, true, 1];
+
+
+
+/* 
+    - Fundamentos
+    - Funciones de tipo
+    - Interfaces
+    - DOM
+*/
