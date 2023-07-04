@@ -36,9 +36,3 @@ print(not op3)   # False
 print(not op4)   # True
 
 # Recordando a Pedro El H4ck3r: 😢 (0101010101010100101001001)
-
-
-
-
-
-print("Esto es un mensaje que se muestra usando python")
