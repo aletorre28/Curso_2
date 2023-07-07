@@ -15,5 +15,3 @@
     Puedes utilizar variables para almacenar los nombres y edades ingresados por el usuario, y comparar las edades utilizando 
     operadores de comparación.
 """
-
-

@@ -6,21 +6,21 @@
 """
 
 # Ejemplo 1:
-# nacimiento = int(input("Ingrese su año de nacimiento: "))
+nacimiento = int(input("Ingrese su año de nacimiento: "))
 
-# if 2023 - nacimiento > 25:
-#     print("Eres mayor de edad y mayor de 25 años o mas")
-# elif 2023 - nacimiento == 25:
-#     print("Tienes exactamente 25 años de edad")
-# elif 2023 - nacimiento > 18 and 2023 - nacimiento < 25:
-#     print("Tienes entre 18 y 25 años de edad")
-# else:
-#     print("Eres menor de edad")
+if 2023 - nacimiento > 25:
+    print("Eres mayor de edad y mayor de 25 años o mas")
+elif 2023 - nacimiento == 25:
+    print("Tienes exactamente 25 años de edad")
+elif 2023 - nacimiento > 18 and 2023 - nacimiento < 25:
+    print("Tienes entre 18 y 25 años de edad")
+else:
+    print("Eres menor de edad")
 
 
 # Al igual que hemos visto anteriormente en JavaSCript, en Python tambien se utiliza el operador Ternario
 # Ejemplo: Operador Ternario 
-# print("Eres mayor de 25 años") if 2023 - nacimiento > 25 else print("Tienes exactamente 25 años de edad") if 2023 - nacimiento == 25 else print("Eres menor de edad")
+print("Eres mayor de 25 años") if 2023 - nacimiento > 25 else print("Tienes exactamente 25 años de edad") if 2023 - nacimiento == 25 else print("Eres menor de edad")
 
 
 
@@ -34,21 +34,21 @@
 
 
 # Aporte de Wilklert Garrido
-# n = int(input("Ingrese un monto: "))
+n = int(input("Ingrese un monto: "))
 
-# if n != 0: #Si n es distinto a 0, entoces se cumplira con:
-#     if n > 0: #Si n es mayor que 0, se cumplira con:
-#         if n % 2 == 0: #Si el n divido con 2 es igual a 0
-#             print(f'El valor de {n} es PAR POSITIVO') #Resultado 1
-#         else: #Si no, se cumple, entonces
-#             print(f'El valor de {n} es IMPAR POSITIVO') #Resultado 2
-#     else: #Si no, Se cumplen con las condiciones anterires, entonces:
-#         if n % 2 == 0: #Si el n divido con 2 es igual a 0
-#             print(f'El valor de {n} es PAR NEGATIVO')
-#         else: #Si no, se cumple, entonces:
-#             print(f'El valor de {n} es IMPAR NEGATIVO')
-# else: #Si no se cumple con ninguna de las condiciones anteriores, como resultado se tendra:
-#     print(f'El valor de {n} es NEUTRO')
+if n != 0: #Si n es distinto a 0, entoces se cumplira con:
+    if n > 0: #Si n es mayor que 0, se cumplira con:
+        if n % 2 == 0: #Si el n divido con 2 es igual a 0
+            print(f'El valor de {n} es PAR POSITIVO') #Resultado 1
+        else: #Si no, se cumple, entonces
+            print(f'El valor de {n} es IMPAR POSITIVO') #Resultado 2
+    else: #Si no, Se cumplen con las condiciones anterires, entonces:
+        if n % 2 == 0: #Si el n divido con 2 es igual a 0
+            print(f'El valor de {n} es PAR NEGATIVO')
+        else: #Si no, se cumple, entonces:
+            print(f'El valor de {n} es IMPAR NEGATIVO')
+else: #Si no se cumple con ninguna de las condiciones anteriores, como resultado se tendra:
+    print(f'El valor de {n} es NEUTRO')
 
 
 
