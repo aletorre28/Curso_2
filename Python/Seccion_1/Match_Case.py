@@ -38,7 +38,6 @@ match respuesta:
 
 
 
-
 # Ejemplo 2
 # # Validar la respuesta ingresada mediante input y determinar que tema de color se aplica usando Match-Case
 
