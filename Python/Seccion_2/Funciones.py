@@ -96,10 +96,10 @@ realizar operaciones simples.
 # En JavaSCript encontramos las funciones anonimas y funciones de flechas.
 
 - Las funciones anonimas (en JavaSCript) se pueden definir del a siguiente manera:
-    function saludar() {console.log("Hola Mundo!");}
+    const miFuncionAnonima = function saludar(){ console.log("Hola Mundo!"); }
 
 - Las funciones de flecha (en JavaSCript) se pueden definir del a siguiente manera:
-    const saludar = () => {console.log("Hola Mundo!");}
+    const saludar = () => { console.log("Hola Mundo!"); }
 
 
 
@@ -158,7 +158,8 @@ print(f"La lista Resultante es: {list(resultadosConLambda)}")
 
 
 
-# Importamos una libreria del sistema operativo que nos permitira limpiar la consola del contenido previo impreso.
+# Importamos una libreria "system" del sistema operativo (os), en esta caso la usaremos para limpiar la consola 
+# del contenido previo impreso.
 from os import system
 
 system("cls")
